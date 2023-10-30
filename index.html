@@ -12,30 +12,31 @@
 </head>
 
 <body class="bg-dark">
-    <div class="container w-75 mt-5 bg-body">
-        <div class="header p-3 bg-light">
+    <div class="container w-75 mt-5 bg-body p-5 ">
+        <div class="border border-1 ">
+        <div class="header p-3 bg-light border border-1 ">
             <h2>Payment form example</h2>
         </div>
 
-        <div class="alert bg-danger m-1">
+        <div class="alert  m-1 he">
             <p>Some fields are missing</p>
         </div>
         <form action="payment">
-            <div class="form bg-body">
+            <div class="form bg-body ">
                 <! – Formulario Cabezal –>
                     <div class="form-top d-flex">
                         <fieldset class="col-5 mb-4">
                             <label for="card">#Card</label> <br />
-                            <input class="w-100" type="text" name="card" id="input-card" value="XXXXXXXXXXXX"
+                            <input class="w-100" type="text" name="card" id="input-card" placeholder="XXXXXXXXXXXXXXXXXXXXX"
                                 required />
                         </fieldset>
                         <fieldset class="col-2 mb-4 mx-2">
                             <label for="cvc">#CVC</label><br />
-                            <input class="w-100" type="text" name="card" id="input-card" value="0000" required />
+                            <input class="w-100" type="text" name="card" id="input-card" placeholder="0000" required />
                         </fieldset>
                         <fieldset class="col-5 mb-4 me-1">
-                            <label for="amount">Amount</label> <br />
-                            <input class="w-97" type="text" name="card" id="input-card" value="Amount" required />
+                            <label for="amount">Amount</label> <br />$
+                            <input class="w-90" type="text" name="card" id="input-card" placeholder="Amount" required />
                         </fieldset>
                     </div>
                     <div class="form-middle d-flex">
@@ -64,13 +65,14 @@
                                 <div class="form-rigth w-50">
                                     <fieldset class="col-12">
                                         <label class="ms-2" for="amount">Last Name</label> <br />
-                                        <input class="w-100 mb-4 ms-2" type="text" name="name" id="input-lastname"
+                                        <input class="w1-100 mb-4 ms-2" type="text" name="name" id="input-lastname"
                                             required />
                                     </fieldset>
                                     <div class="d-flex">
                                         <fieldset class="col-6 ms-2">
                                             <label class="mb-1" for="state">State </label> <br />
-                                            <select name="state" class="w-50">
+                                            <select name="state" class="w-75 h">
+                                                <option value="state">Pick a state</option>
                                                 <option value="volvo">Spain</option>
                                                 <option value="saab">UUEE</option>
                                                 <option value="opel">France</option>
@@ -79,22 +81,23 @@
                                         </fieldset>
                                         <fieldset class="col-6">
                                             <label class="mb-1" for="Adrress"> Postal Code</label> <br />
-                                            <input class="w-100" type="text" name="postalcode" />
+                                            <input class="w2-100" type="text" name="postalcode" />
                                         </fieldset>
                                     </div>
                                     <fieldset>
                                         <label for="moreinfo">Message :</label> <br />
-                                        <textarea name="moreinfo" cols="65" rows="6"></textarea> <br />
-                                        <span>Add some info</span>
+                                        <textarea name="moreinfo" cols="55" rows="5"></textarea> <br />
+                                        <span>Add any notes here</span>
                                     </fieldset>
                                 </div>
                     </div>
             </div>
-            <div class="form-footer final p-2 bg-light">
+            <div class="form-footer final p-2 bg-light border border-1 w-100">
                 <button class="btn-secondary me-3">Cancel</button>
                 <button class="btn-primary">Send</button>
             </div>
         </form>
+    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
