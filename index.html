@@ -12,92 +12,94 @@
 </head>
 
 <body class="bg-dark">
-    <div class="container w-75 mt-5 bg-body p-5 ">
-        <div class="border border-">
-        <div class="header p-3 bg-light border border-1 ">
-            <h2>Payment form example</h2>
-        </div>
+    <div class="container w-75 mt-5 bg-body p-5 border">
+        <div class="border ">
+            <div class="card">
+                <h5 class="card-header">Payment form example</h5>
+            </div>
 
-        <div class="alerta  he">
-            <p>Some fields are missing</p>
-        </div>
-        <form action="payment">
-            <div class="form bg-body p-3">
-                <! – Formulario Cabezal –>
-                    <div class="form-top d-flex">
-                        <fieldset class="col-5 mb-4">
-                            <label for="card">#Card</label> <br />
-                            <input class="w-100" type="text" name="card" id="input-card" placeholder="XXXXXXXXXXXXXXXXXXXXX"
-                                required />
-                        </fieldset>
-                        <fieldset class="col-2 mb-4 mx-2">
-                            <label for="cvc">#CVC</label><br />
-                            <input class="w-100" type="text" name="card" id="input-card" placeholder="0000" required />
-                        </fieldset>
-                        <fieldset class="col-5 mb-4 me-1">
-                            <label for="amount">Amount</label><br/>$
-                            <input class="w-90" type="text" name="card" id="input-card" placeholder="Amount" required />
-                        </fieldset>
+            <div class="card-body">
+                <div class="alert alert-danger" role="alert">
+                    Some fields are missing
+                </div>
+            </div>
+            <form class="form-group">
+                <div class="row">
+                    <div class="col-md-5 ms-4">
+                        <label for="inputEmail4" class="form-label">#Card</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="XXXXXXXXXXXXXXX">
                     </div>
-                    <div class="form-middle d-flex">
-                        <! – Formulario Izquierda –>
-                            <div class="form-left w-50">
-                                <fieldset>First Name</fieldset>
-                                <input class="w-90 mb-4" type="text" name="name" id="input-fname" required />
-                                <br />
-                                <fieldset>City</fieldset>
-                                <input class="w-90 mb-4" type="text" name="Adress" id="input-adress" required />
-                                <br />
-                                <fieldset>We accept :</fieldset>
-                                <p class=" p bg-secondary w-75">
-                                    <input class="m-2" type="radio" name="paymentmethods" value="mastercard" />
-                                    <i class="fa fa-cc-mastercard"></i>
-                                    <input class="m-2" type="radio" name="paymentmethods" value="mastercard" />
-                                    <i class="fa fa-cc-visa"></i>
-                                    <input class="m-2" type="radio" name="paymentmethods" value="mastercard" />
-                                    <i class="fa fa-cc-diners-club"></i>
-                                    <input class="m-2" type="radio" name="paymentmethods" value="mastercard" />
-                                    <i class="fa fa-paypal"></i>
-                                </p>
+                    <div class="col-md-2">
+                        <label for="inputPassword4" class="form-label">#CVC</label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="0000">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputAddress" class="form-label">Amount</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Amount">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 ms-4">
+                        <label for="inputAddress2" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="inputAddress2">
+                    </div>
+                    <div class="col-md-5">
+                        <label for="inputCity" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 ms-4">
+                        <label for="inputAddress2" class="form-label">City</label>
+                        <input type="text" class="form-control" id="inputAddress2">
+                    </div>
+
+                    <div class="row col-md-6">
+                        <div class="col-md-5">
+                            <label for="inputAddress2" class="form-label">State</label>
+                            <select class="form-select form-select-md mb-3" aria-label=".form-select-md example">
+                                <option selected>Pick a State</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputAddress2" class="form-label">Postal Code</label>
+                            <input type="text" class="form-control" id="inputAddress2">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row col-md-6 me-4">
+                            <fieldset class="py-4 ms-4">We accept :</fieldset>
+                            <p class=" ms-5 bg-secondary w-auto">
+                                <input class="m-2" type="radio" name="paymentmethods" value="mastercard" />
+                                <i class="fa fa-cc-mastercard"></i>
+                                <input class="m-2" type="radio" name="paymentmethods" value="mastercard" />
+                                <i class="fa fa-cc-visa"></i>
+                                <input class="m-2" type="radio" name="paymentmethods" value="mastercard" />
+                                <i class="fa fa-cc-diners-club"></i>
+                                <input class="m-2" type="radio" name="paymentmethods" value="mastercard" />
+                                <i class="fa fa-paypal"></i>
+                            </p>
+                        </div>
+                        <div class="row col-md-5">
+                            <div class="form">
+                                <label class="py-1">Messages</label>
+                                <textarea class="form-control" id="floatingTextarea2"
+                                    style="width: 470px; height: 100px"></textarea>
+                                <div id="emailHelp" class="form-text">Add some info.</div>
                             </div>
-
-                            <! – Formulario Derecha –>
-                                <div class="form-rigth w-50">
-                                    <fieldset class="col-12">
-                                        <label class="ms-2" for="amount">Last Name</label> <br />
-                                        <input class="w-100 mb-4 ms-2" type="text" name="name" id="input-lastname"
-                                            required />
-                                    </fieldset>
-                                    <div class="d-flex">
-                                        <fieldset class="col-6 ms-2">
-                                            <label class="mb-1" for="state">State </label> <br />
-                                            <select name="state" class="w-75 h">
-                                                <option value="state">Pick a state</option>
-                                                <option value="volvo">Spain</option>
-                                                <option value="saab">UUEE</option>
-                                                <option value="opel">France</option>
-                                                <option value="audi">Belgium</option>
-                                            </select>
-                                        </fieldset>
-                                        <fieldset class="col-6">
-                                            <label class="mb-1" for="Adrress"> Postal Code</label> <br />
-                                            <input class="w-100" type="text" name="postalcode" />
-                                        </fieldset>
-                                    </div>
-                                    <fieldset class="m-3">
-                                        <label for="moreinfo">Message :</label> <br />
-                                        <textarea name="moreinfo" cols="50" rows="5"></textarea> <br />
-                                        <span>Add any notes here</span>
-                                    </fieldset>
-                                </div>
-                    </div>
-            </div>
-            <div class="form-footer final p-2 bg-light border border-1 w-100">
-                <button class="btn-secondary me-3">Cancel</button>
-                <button class="btn-primary">Send</button>
-            </div>
-        </form>
-    </div>
+                        </div>
+                        <div class="card-footer ms-3">
+                            <div class="d-flex flex-row-reverse">
+                                <button class="btn btn-primary col-md-1">Send</button>
+                                <button class="btn btn-secondary col-md-1 me-4">Cancel</button>
+                            </div>
+                        </div>
+            </form>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
