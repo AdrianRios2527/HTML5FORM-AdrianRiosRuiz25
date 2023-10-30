@@ -1,0 +1,8 @@
+.final{ display: flex;
+    justify-content: end;
+   align-items: end; 
+
+}
+.w-97{
+    width: 97%;
+}
