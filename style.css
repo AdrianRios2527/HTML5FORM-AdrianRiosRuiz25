@@ -35,3 +35,9 @@ span{
 .p{
     margin-top: 40px;
 }
+
+.alerta{
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
